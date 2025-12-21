@@ -1,0 +1,47 @@
+# Site settings
+title: Ken Laam
+description: iOS Developer | App Maker
+author: Ken Laam
+email: # your email (optional)
+
+# URL settings
+url: "https://kenlaam.github.io"
+baseurl: ""
+
+# Build settings
+theme: minima
+markdown: kramdown
+highlighter: rouge
+
+# Syntax highlighting
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+# Permalink style
+permalink: /blog/:year/:month/:day/:title/
+
+# Collections
+collections:
+  apps:
+    output: true
+    permalink: /apps/:name/
+
+# Navigation (minima theme)
+header_pages:
+  - blog.md
+  - apps.md
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
