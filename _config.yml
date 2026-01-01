@@ -5,7 +5,9 @@ author: Ken Laam
 email: # your email (optional)
 
 # URL settings
-url: "https://kenlaam.github.io"
+# TODO: Update URL after purchasing custom domain
+# Options: kenlaam.dev, kenlaam.com, kenlaam.io, etc.
+url: "https://kenlaam.pages.dev"  # Cloudflare Pages default, change to custom domain later
 baseurl: ""
 
 # Build settings
