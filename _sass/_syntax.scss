@@ -1,0 +1,83 @@
+// Syntax highlighting - Dark Developer Theme
+// Based on GitHub Dark / One Dark Pro
+
+.highlight {
+  background: $bg-secondary;
+  border-radius: 8px;
+
+  pre {
+    margin: 0;
+    padding: $spacing-lg;
+  }
+}
+
+.highlighter-rouge {
+  .highlight {
+    background: $bg-secondary;
+    border: 1px solid $border;
+  }
+}
+
+// Rouge syntax classes
+.highlight {
+  // Comments
+  .c, .c1, .cm, .cs { color: $text-muted; font-style: italic; }
+
+  // Keywords
+  .k, .kc, .kd, .kn, .kp, .kr, .kt { color: $purple; }
+
+  // Strings
+  .s, .s1, .s2, .sb, .sc, .sd, .se, .sh, .si, .sr, .ss, .sx { color: $green; }
+
+  // Numbers
+  .m, .mf, .mh, .mi, .mo, .il { color: $orange; }
+
+  // Names/Functions
+  .n { color: $text-primary; }
+  .na { color: $accent; }
+  .nb { color: #79C0FF; }
+  .nc { color: $orange; font-weight: 600; }
+  .nd { color: $purple; }
+  .nf { color: $accent; }
+  .ni { color: $text-primary; }
+  .nl { color: $accent; }
+  .nn { color: $orange; }
+  .no { color: $orange; }
+  .nt { color: $green; }
+  .nv, .vc, .vg, .vi { color: #FFA657; }
+
+  // Operators
+  .o, .ow { color: $red; }
+
+  // Punctuation
+  .p { color: $text-primary; }
+
+  // Generic
+  .gd { color: $red; background: rgba($red, 0.1); }
+  .ge { font-style: italic; }
+  .gi { color: $green; background: rgba($green, 0.1); }
+  .gp { color: $text-muted; }
+  .gs { font-weight: bold; }
+  .gu { color: $accent; }
+
+  // Errors
+  .err { color: $red; }
+
+  // Text
+  .w { color: $text-primary; }
+
+  // Special
+  .bp { color: $accent; }
+  .fm { color: $accent; }
+}
+
+// Language-specific: Swift
+.language-swift {
+  .highlight {
+    .kd { color: $purple; } // let, var, func, class, struct
+    .kt { color: $orange; } // Types: String, Int, etc.
+    .k { color: $purple; }  // Keywords: return, if, guard
+    .nf { color: $accent; } // Function names
+    .nc { color: $orange; } // Class/Struct names
+  }
+}

@@ -1,6 +1,6 @@
 # Site settings
 title: Ken Laam
-description: iOS Developer | App Maker
+description: Senior iOS Developer | Building elegant apps with Swift and SwiftUI
 author: Ken Laam
 email: # your email (optional)
 
@@ -9,9 +9,13 @@ url: "https://kenlaam.github.io"
 baseurl: ""
 
 # Build settings
-theme: minima
 markdown: kramdown
 highlighter: rouge
+
+# SASS settings
+sass:
+  style: compressed
+  sass_dir: _sass
 
 # Syntax highlighting
 kramdown:
@@ -29,7 +33,7 @@ collections:
     output: true
     permalink: /apps/:name/
 
-# Navigation (minima theme)
+# Navigation
 header_pages:
   - blog.md
   - apps.md
@@ -45,3 +49,5 @@ exclude:
   - Gemfile.lock
   - README.md
   - vendor/
+  - _samples/
+  - plans/

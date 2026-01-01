@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<section class="hero">
+  {{ content }}
+</section>
+
+{%- if site.posts.size > 0 -%}
+<section class="posts-section">
+  <h2 class="section-title">Latest Posts</h2>
+  <ul class="post-list">
+    {%- for post in site.posts limit:5 -%}
+    <li class="post-item">
+      <a href="{{ post.url | relative_url }}">
+        <span class="post-meta">{{ post.date | date: "%b %d, %Y" }}</span>
+        <h3 class="post-link">{{ post.title | escape }}</h3>
+        {%- if post.excerpt -%}
+        <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
+        {%- endif -%}
+        {%- if post.categories.size > 0 -%}
+        <div class="post-tags">
+          {%- for category in post.categories limit:3 -%}
+          <span class="tag">{{ category }}</span>
+          {%- endfor -%}
+        </div>
+        {%- endif -%}
+      </a>
+    </li>
+    {%- endfor -%}
+  </ul>
+</section>
+{%- endif -%}

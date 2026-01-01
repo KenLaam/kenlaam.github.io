@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date: "%B %d, %Y" }}
+      </time>
+      {%- if page.categories.size > 0 -%}
+      <span class="post-categories">
+        in
+        {%- for category in page.categories -%}
+          <span class="tag">{{ category }}</span>
+        {%- endfor -%}
+      </span>
+      {%- endif -%}
+    </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  {%- if site.posts.size > 1 -%}
+  <nav class="post-navigation" aria-label="Post navigation">
+    {%- if page.previous.url -%}
+    <a class="btn btn-secondary" href="{{ page.previous.url | relative_url }}" aria-label="Previous post: {{ page.previous.title }}">
+      <span aria-hidden="true">&larr;</span> {{ page.previous.title | truncate: 30 }}
+    </a>
+    {%- endif -%}
+    {%- if page.next.url -%}
+    <a class="btn btn-secondary" href="{{ page.next.url | relative_url }}" aria-label="Next post: {{ page.next.title }}">
+      {{ page.next.title | truncate: 30 }} <span aria-hidden="true">&rarr;</span>
+    </a>
+    {%- endif -%}
+  </nav>
+  {%- endif -%}
+</article>

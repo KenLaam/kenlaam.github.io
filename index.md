@@ -3,9 +3,13 @@ layout: home
 title: Home
 ---
 
-Hi, I'm **Ken Laam**, an iOS developer.
+<div class="hero-badge">iOS Developer</div>
 
-I build apps and share what I learn along the way.
+# Senior <span class="accent">iOS</span> Developer
 
-- [My Apps](/apps) - Apps I've published on the App Store
-- [Blog](/blog) - iOS development articles and experiences
+Building elegant apps with Swift and SwiftUI. Writing about code, architecture, and everything Apple.
+
+<div class="hero-buttons">
+  <a href="/apps/" class="btn btn-primary">View Apps</a>
+  <a href="/blog/" class="btn btn-secondary">Read Blog</a>
+</div>

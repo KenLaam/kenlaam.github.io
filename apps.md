@@ -4,25 +4,27 @@ title: Apps
 permalink: /apps/
 ---
 
-## My Apps
-
 Apps I've built and published on the App Store.
 
----
+<div class="apps-section">
+
+*Coming soon...*
 
 <!-- Add your apps here. Example format:
 
-### App Name
+<div class="app-card">
 
-![App Icon](/assets/apps/app-icon.png)
+### App Name
 
 Brief description of what the app does.
 
-- [App Store](https://apps.apple.com/app/id...)
-- [Privacy Policy](/privacy/app-name)
+<div class="app-links">
+  <a href="https://apps.apple.com/app/id..." class="btn btn-primary">App Store</a>
+  <a href="/privacy/" class="btn btn-secondary">Privacy</a>
+</div>
 
----
+</div>
 
 -->
 
-*Coming soon...*
+</div>
