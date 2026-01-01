@@ -7,7 +7,7 @@ email: # your email (optional)
 # URL settings
 # TODO: Update URL after purchasing custom domain
 # Options: kenlaam.dev, kenlaam.com, kenlaam.io, etc.
-url: "https://kenlaam.pages.dev"  # Cloudflare Pages default, change to custom domain later
+url: "https://kenlaam-blog.pages.dev"  # Cloudflare Pages, change to custom domain later
 baseurl: ""
 
 # Build settings
