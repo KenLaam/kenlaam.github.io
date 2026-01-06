@@ -39,6 +39,7 @@ collections:
 header_pages:
   - blog.md
   - apps.md
+  - about.md
 
 # Plugins
 plugins:
