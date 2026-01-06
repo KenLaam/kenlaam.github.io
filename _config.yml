@@ -37,9 +37,9 @@ collections:
 
 # Navigation
 header_pages:
-  - about.md
   - blog.md
   - apps.md
+  - about.md
 
 # Plugins
 plugins:
