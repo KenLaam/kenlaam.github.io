@@ -54,3 +54,4 @@ exclude:
   - vendor/
   - _samples/
   - plans/
+  - docs/
